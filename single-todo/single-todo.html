@@ -1,0 +1,59 @@
+<ion-view>
+	<ion-nav-title>{{currentTodo.title}}</ion-nav-title>
+
+	<ion-nav-bar class="bar-positive">
+		<ion-nav-back-button class="button-clear button-goback">
+			<i class="ion-ios-arrow-back"></i>
+		</ion-nav-back-button>
+	</ion-nav-bar>
+
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+	</ion-nav-buttons>
+
+	<ion-content class="padding page-content" ng-show="!currentTodo.editMode" has-bouncing="true">
+		<ion-list class="list-todos" ng-class="{ 'list-todos-started' : list.length }">
+			<ion-item class="list-todos-title" ng-if="list.length">Todo Content</ion-item>
+
+			<ion-item ng-repeat="entry in list track by $index">
+				<ion-checkbox ng-model="entry.isChecked" ng-change="updateEntry($index, entry.isChecked)">{{entry.text}}</ion-checkbox>
+			</ion-item>
+		</ion-list>
+
+		<button class="button button-balanced button-block" ng-click="turnEditModeOn(currentTodo)">Edit</button>
+	</ion-content>
+
+	<ion-content class="padding page-content" ng-show="currentTodo.editMode" has-bouncing="true">
+		<form ng-submit="updateTodo(currentTodo)" name="updateTodoForm">
+			<div class="list">
+				<label class="item item-input item-floating-label">
+					<span class="input-label">Todo Title</span>
+
+					<input type="text" ng-model="currentTodo.title" required placeholder="Todo Title">
+
+					<span class="error-notification">Title is missing</span>
+				</label>
+
+				<ion-list class="list-todos" ng-class="{ 'list-todos-started' : list.length }">
+					<ion-item class="list-todos-title" ng-if="list.length">Todo Content</ion-item>
+
+					<ion-item ng-repeat="entry in list track by $index">
+						<ion-checkbox ng-model="entry.isChecked" ng-change="updateEntry($index)">{{entry.text}}</ion-checkbox>
+
+						<ion-option-button class="button-assertive" ng-click="deleteEntry($index)">Delete</ion-option-button>
+					</ion-item>
+				</ion-list>
+
+				<label class="item item-input item-floating-label">
+					<span class="input-label">Todo Content</span>
+
+					<input type="text" ng-keypress="createTodoItem($event)" ng-model="newEntry.text" placeholder="Todo Content">
+
+					<span class="error-notification">Content is missing</span>
+				</label>
+
+				<button class="button button-block button-balanced" type="submit">Save Todo</button>
+			</div>
+		</form>
+	</ion-content>
+</ion-view>

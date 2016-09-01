@@ -1,0 +1,45 @@
+<ion-view title="Dashboard">
+	<ion-nav-bar class="bar-positive">
+		<ion-nav-back-button class="button-clear button-goback">
+			<i class="ion-ios-arrow-back"></i>
+		</ion-nav-back-button>
+	</ion-nav-bar>
+
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+	</ion-nav-buttons>
+
+	<ion-content class="has-header padding page-content" has-bouncing="true">
+		<h4>Summary</h4>
+
+		<div class="list list-inset">
+			<div class="item" ui-sref="app.notes">
+				<strong>{{allNotes}}</strong>
+
+				<ng-pluralize count="allNotes" when="{0: 'notes', 'one': 'note', 'other': 'notes'}"></ng-pluralize>
+			</div><!-- /.item -->
+
+			<div class="item" ui-sref="app.reminders">
+				<strong>{{allReminders}}</strong>
+
+				<ng-pluralize count="allReminders" when="{0: 'reminders', 'one': 'reminder', 'other': 'reminders'}"></ng-pluralize>
+			</div><!-- /.item -->
+
+			<div class="item" ui-sref="app.todos">
+				<strong>{{allTodos}}</strong>
+
+				<ng-pluralize count="allTodos" when="{0: 'todos', 'one': 'todo', 'other': 'todos'}"></ng-pluralize>
+			</div><!-- /.item -->
+		</div><!-- /.list list-inset -->
+
+		<h4>Quick Links</h4>
+
+		<div class="list list-inset">
+			<button class="button button-block button-calm" ui-sref="app.create-note" style="margin-top: 0;">Create a Note</button>
+
+			<button class="button button-block button-royal" ui-sref="app.create-reminder">Create a Reminder</button>
+
+			<button class="button button-block button-balanced" ui-sref="app.create-todo">Create a Todo</button>
+		</div><!-- /.list list-inset -->
+	</ion-content>
+</ion-view>

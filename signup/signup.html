@@ -1,0 +1,29 @@
+<ion-view>
+	<ion-header-bar class="bar-positive">
+		<h1 class="title">Notabene Sign Up</h1>
+	</ion-header-bar>
+
+	<ion-content has-bouncing="true" class="page-content">
+		<div class="list">
+			<label class="item item-input item-floating-label">
+				<span class="input-label positive">My Email</span>
+				
+				<input type="email" placeholder="email@domain.com" ng-model="user.email">
+			</label>
+		</div>
+
+		<div class="padding">
+			<button class="button button-positive button-block" ng-click="signup()">Sign Me Up</button>
+			
+			<div class="error" ng-if="errorMessage" ng-bind="errorMessage"></div>
+
+			<br>
+			
+			<hr />
+			
+			<br>
+
+			<button class="button button-calm button-block" ui-sref="login">I have an account</button>
+		</div>
+	</ion-content>
+</ion-view>

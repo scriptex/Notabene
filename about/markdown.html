@@ -1,0 +1,118 @@
+<ion-view title="About Markdown">
+	<ion-nav-bar class="bar-positive">
+		<ion-nav-back-button class="button-clear button-goback">
+			<i class="ion-ios-arrow-back"></i>
+		</ion-nav-back-button>
+	</ion-nav-bar>
+
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+	</ion-nav-buttons>
+
+	<ion-content class="has-header padding article page-content" has-bouncing="true">
+		<h2>About Markdown</h2>
+
+		<p>Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).</p>
+
+		<h3>Examples: </h3>
+
+		<h4>Headers</h4>
+
+		<pre><code># H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6</code></pre>
+
+		<h4>Emphasis</h4>
+
+		<pre><code>Emphasis, aka italics, with *asterisks* or _underscores_.
+
+Strong emphasis, aka bold, with **asterisks** or __underscores__.
+
+Combined emphasis with **asterisks and _underscores_**.
+
+Strikethrough uses two tildes. ~~Scratch this.~~</code></pre>
+
+		<h4>Lists</h4>
+
+		<pre><code>1. First ordered list item
+2. Another item
+
+* Unordered list can use asterisks
+- Or minuses
++ Or pluses</code></pre>
+
+		<h4>Links</h4>
+
+		<pre><code>I'm an inline-style link](https://www.google.com)</code></pre>
+
+		<h4>Images</h4>
+
+		<pre><code>Inline-style: 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+Reference-style: 
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"</code></pre>
+
+		<h4>Tables</h4>
+
+		<pre><code>Colons can be used to align columns.
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+There must be at least 3 dashes separating each header cell.
+The outer pipes (|) are optional, and you don't need to make the 
+raw Markdown line up prettily. You can also use inline Markdown.
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3</code></pre>
+
+		<h4>Blockquotes</h4>
+
+		<pre><code>> Blockquotes are very handy in email to emulate reply text.
+> This line is part of the same quote.
+
+Quote break.
+
+> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. </code></pre>
+
+		<h4>Inline HTML</h4>
+
+		<pre><code>&lt;dl&gt;
+&lt;dt&gt;Definition list&lt;/dt&gt;
+&lt;dd&gt;Is something people use sometimes.&lt;/dd&gt;
+&lt;dt&gt;Markdown in HTML&lt;/dt&gt;
+&lt;dd&gt;Does *not* work **very** well. Use HTML &lt;em&gt;tags&lt;/em&gt;.&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+
+		<h4>Horizontal Rule</h4>
+
+		<pre><code>Three or more...
+---
+Hyphens
+***
+Asterisks
+___
+Underscores</code></pre>
+
+		<h4>Youtube videos</h4>
+
+		<p>They can't be added directly but you can add an image with a link to the video like this:</p>
+
+		<pre><code>&lt;a href="http://www.youtube.com/watch?feature=player_embedded&amp;v=YOUTUBE_VIDEO_ID_HERE" target="_blank"&gt;&lt;img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /&gt;&lt;/a&gt;</code></pre>
+
+		<p>Or, in pure Markdown, but losing the image sizing and border:</p>
+
+		<pre><code>[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)</code></pre>
+	</ion-content>
+</ion-view>

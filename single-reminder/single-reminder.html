@@ -1,0 +1,123 @@
+<ion-view>
+	<ion-nav-title>{{currentReminder.title}}</ion-nav-title>
+
+	<ion-nav-bar class="bar-positive">
+		<ion-nav-back-button class="button-clear button-goback">
+			<i class="ion-ios-arrow-back"></i>
+		</ion-nav-back-button>
+	</ion-nav-bar>
+
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+	</ion-nav-buttons>
+	
+	<ion-content class="padding page-content" ng-show="!currentReminder.editMode" has-bouncing="true">
+		<div class="markdown-container" btf-markdown="currentReminder.content"></div>
+
+		<hr />
+
+		<div class="reminder-details">
+			<span>Date:</span>
+
+			<strong>{{currentReminder.date | date: 'MM/dd/yyyy' }}</strong>
+		</div>
+
+		<div class="reminder-details">
+			<span>Time:</span> 
+
+			<strong>{{currentReminder.time | date: 'h:mm a' }}</strong>
+		</div>
+
+		<div class="reminder-details">
+			<span>Repeating:</span>
+
+			<strong><span ng-if="currentReminder.repeating">Yes</span><span ng-if="!currentReminder.repeating">No</span></strong>
+		</div>
+
+		<div class="reminder-details" ng-show="currentReminder.repeating">
+			<span>Repeat Interval:</span>
+
+			<strong>
+				<span ng-if="currentReminder.repetition !== 0">Every {{currentReminder.repetition}}</span>
+
+				<span ng-if="currentReminder.repetition === 0">No repetition</span>
+			</strong>
+		</div><!-- /.reminder-detals -->
+
+		<div class="reminder-details">
+			<span>Recieve Notifications:</span>
+
+			<strong><span ng-if="currentReminder.notification">Yes</span><span ng-if="!currentReminder.notification">No</span></strong>
+		</div>
+
+		<hr />
+
+		<button class="button button-royal button-block" ng-click="turnEditModeOn(currentReminder)">Edit</button>
+	</ion-content>
+
+	<ion-content class="padding page-content" ng-show="currentReminder.editMode" has-bouncing="true">
+		<form ng-submit="updateReminder(currentReminder)" name="editReminderForm">
+			<div class="list">
+				<label class="item item-input item-stacked-label">
+					<span class="input-label">Reminder Title</span>
+
+					<input type="text" ng-model="currentReminder.title" required>
+
+					<span class="error-notification">Title is missing</span>
+				</label>
+
+				<label class="item item-input item-stacked-label">
+					<small class="item-input-hint">Supports <a href="#/app/markdown">Markdown</a></small>
+
+					<span class="input-label">Reminder Content</span>
+
+					<textarea ng-model="currentReminder.content" required class="note-content-edit"></textarea>
+
+					<span class="error-notification">Content is missing</span>
+				</label>
+
+				<label class="item item-input item-stacked-label">
+					<span class="input-label">Reminder Date</span>
+
+					<input type="date" ng-model="currentReminder.date" required class="has-value">
+
+					<span class="error-notification">Date is missing</span>
+				</label>
+
+				<label class="item item-input item-stacked-label">
+					<span class="input-label">Reminder Time</span>
+
+					<input type="time" ng-model="currentReminder.time" required class="has-value">
+
+					<span class="error-notification">Time is missing</span>
+				</label>
+
+				<ion-toggle ng-model="currentReminder.repeating" ng-change="currentReminder.repeating" toggle-class="toggle-royal">Repeating Reminder?</ion-toggle>
+
+				<label class="item item-select item-stacked-label " ng-show="currentReminder.repeating">
+					<span class="input-label">Repeat Interval:</span>
+
+					<select ng-model="currentReminder.repetition">
+						<option value="0">No Repeat</option>
+
+						<option value="minute">Every Minute</option>
+
+						<option value="hour">Every Hour</option>
+
+						<option value="day">Every Day</option>
+
+						<option value="week">Every Week</option>
+
+						<option value="month">Every Month</option>
+
+						<option value="year">Every Year</option>
+					</select>
+				</label>
+
+				<ion-toggle ng-model="currentReminder.notification" ng-change="currentReminder.notification" toggle-class="toggle-royal">Recieve Notification?</ion-toggle>
+
+				<button class="button button-block button-royal" type="submit">Save Reminder</button>
+			</div>
+		</form>
+	</ion-content>
+</ion-view>

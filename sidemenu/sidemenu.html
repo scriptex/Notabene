@@ -1,0 +1,93 @@
+<ion-side-menus>
+	<ion-pane ion-side-menu-content>
+		<ion-nav-bar class="bar-positive nav-title-slide-ios7"></ion-nav-bar>
+		
+		<ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+	</ion-pane>
+
+	<ion-side-menu side="left">
+		<header class="bar bar-header bar-positive">
+			<h1 class="title">Notabene Menu</h1>
+		</header>
+
+		<ion-content class="has-header" has-bouncing="true">
+			<ion-list class="sidemenu">
+				<ion-item nav-clear menu-toggle ui-sref="app.dashboard">
+					<i class="icon ion-home"></i>
+
+					Dashboard
+				</ion-item>
+
+				<ion-item class="item-divider">&nbsp;</ion-item>
+
+				<ion-item nav-clear menu-toggle ui-sref="app.notes">
+					<i class="icon ion-clipboard"></i>
+
+					Notes
+				</ion-item>
+
+				<ion-item nav-clear menu-toggle ui-sref="app.reminders">
+					<i class="icon ion-calendar"></i>
+
+					Reminders
+				</ion-item>
+
+				<ion-item nav-clear menu-toggle ui-sref="app.todos">
+					<i class="icon ion-checkmark"></i>
+
+					Todos
+				</ion-item>
+
+				<ion-item class="item-divider">&nbsp;</ion-item>
+
+				<ion-item nav-clear menu-toggle ui-sref="app.create-note">
+					<i class="icon ion-document"></i>
+
+					Create a Note
+				</ion-item>
+
+				<ion-item nav-clear menu-toggle ui-sref="app.create-reminder">
+					<i class="icon ion-clock"></i>
+
+					Create a Reminder
+				</ion-item>
+
+				<ion-item nav-clear menu-toggle ui-sref="app.create-todo">
+					<i class="icon ion-checkmark-circled"></i>
+
+					Create a Todo
+				</ion-item>
+
+				<ion-item class="item-divider">&nbsp;</ion-item>
+				
+				<ion-item nav-clear menu-toggle ui-sref="change-password">
+					<i class="icon ion-edit"></i>
+
+					Change Password
+				</ion-item>
+
+				<ion-item nav-clear menu-toggle ng-click="logout()">
+					<i class="icon ion-log-out"></i>
+
+					Logout
+				</ion-item>
+
+				<ion-item class="item-divider">&nbsp;</ion-item>
+
+				<ion-item nav-clear menu-toggle ui-sref="app.about">
+					<i class="icon ion-information-circled"></i>
+
+					About
+				</ion-item>
+
+				<ion-item nav-clear menu-toggle ui-sref="app.markdown">
+					<i class="icon ion-wand"></i>
+
+					Markdown
+				</ion-item>
+
+				<ion-item class="item-divider">&nbsp;</ion-item>
+			</ion-list>
+		</ion-content>
+	</ion-side-menu>
+</ion-side-menus>
