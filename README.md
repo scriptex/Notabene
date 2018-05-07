@@ -7,18 +7,16 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/scriptex/Notabene/webpack.config.js/graphs/commit-activity)
 
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/scriptex/)
-[![ForTheBadge powered-by-electricity](http://ForTheBadge.com/images/badges/powered-by-electricity.svg)](http://ForTheBadge.com)
-[![ForTheBadge winter-is-coming](http://ForTheBadge.com/images/badges/winter-is-coming.svg)](http://ForTheBadge.com)
 
 # Notabene
 
 Notes, Reminders and Todos App for Android and iOS
 
-## Dev Details
+## Dev details
 
 This application is built with Ionic 1 using AngularJS 1.6.
 
-As you may have noticed, it is pretty old and outdated.
+**As you may have noticed, it is pretty old and outdated.**
 
 It was built as an exercise and turned out to work pretty well.
 
@@ -29,6 +27,8 @@ A recode in modern ES2017 is planned which will also introduce a new framework (
 The application allows you to login with email or with facebook/twitter/github.
 
 Then you can add notes, todos and reminders.
+
+Reminders trigger push notifications and can be set to repeat in different periods.
 
 ## LICENSE
 
