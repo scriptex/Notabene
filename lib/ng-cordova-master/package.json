@@ -22,7 +22,7 @@
     "karma-chrome-launcher": "0.1.12",
     "karma-coverage": "0.2.7",
     "karma-jasmine": "0.1.6",
-    "karma-phantomjs-launcher": "0.1.4",
+    "karma-phantomjs-launcher": "0.2.3",
     "minimist": "0.1.0"
   },
   "licenses": [
