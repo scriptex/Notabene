@@ -34,7 +34,7 @@
     "test": "gulp lint && gulp karma --browsers=PhantomJS --reporters=progress"
   },
   "dependencies": {
-    "conventional-changelog": "0.0.11",
+    "conventional-changelog": "0.5.3",
     "fs": "0.0.2",
     "gulp-git": "^1.2.4",
     "q": "^1.1.2"
