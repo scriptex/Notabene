@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "bower": "1.8.4",
-    "gulp-util": "2.2.20",
+    "gulp-util": "3.0.8",
     "shelljs": "0.8.2"
   },
   "cordovaPlugins": [
