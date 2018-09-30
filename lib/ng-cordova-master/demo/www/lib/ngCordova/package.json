@@ -17,7 +17,7 @@
     "gulp-shell": "0.2.11",
     "gulp-uglify": "0.3.2",
     "jshint-stylish": "0.4.0",
-    "karma": "0.13.22",
+    "karma": "3.0.0",
     "karma-chrome-launcher": "0.2.3",
     "karma-coverage": "0.2.7",
     "karma-jasmine": "1.1.2",
