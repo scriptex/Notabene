@@ -20,7 +20,7 @@
     "jshint-stylish": "0.4.0",
     "karma": "0.13.22",
     "karma-chrome-launcher": "0.2.3",
-    "karma-coverage": "0.2.7",
+    "karma-coverage": "1.1.2",
     "karma-jasmine": "1.1.2",
     "karma-phantomjs-launcher": "0.1.4",
     "minimist": "0.2.0"
