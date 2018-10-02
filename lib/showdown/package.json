@@ -42,6 +42,6 @@
     "grunt-contrib-uglify": "0.11.1",
     "grunt-simple-mocha": "0.4.1",
     "mocha": "*",
-    "should": "4.6.5"
+    "should": "13.2.3"
   }
 }
