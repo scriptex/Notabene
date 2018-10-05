@@ -39,7 +39,7 @@
     "grunt-contrib-jshint": "2.0.0", 
     "grunt": "1.0.3",
     "grunt-contrib-concat": "1.0.1",
-    "grunt-contrib-uglify": "0.11.1",
+    "grunt-contrib-uglify": "4.0.0",
     "grunt-simple-mocha": "0.4.1",
     "mocha": "*",
     "should": "13.2.3"
