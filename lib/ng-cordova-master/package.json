@@ -10,7 +10,7 @@
     "gulp": "3.9.1",
     "gulp-concat": "2.6.1",
     "gulp-footer": "2.0.1",
-    "gulp-header": "1.8.12",
+    "gulp-header": "2.0.5",
     "gulp-jscs": "4.1.0",
     "gulp-jshint": "2.1.0",
     "gulp-prettify": "0.5.0",
