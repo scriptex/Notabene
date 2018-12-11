@@ -7,7 +7,7 @@
     "url": "git://github.com/driftyco/ng-cordova.git"
   },
   "devDependencies": {
-    "gulp": "3.9.1",
+    "gulp": "4.0.0",
     "gulp-concat": "2.6.1",
     "gulp-footer": "2.0.1",
     "gulp-header": "2.0.5",
