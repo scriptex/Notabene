@@ -35,7 +35,7 @@
     "test": "mocha ./test/run.js"
   },
   "devDependencies": {
-    "angular": "1.7.5",
+    "angular": "1.7.6",
     "grunt-contrib-jshint": "2.0.0", 
     "grunt": "1.0.3",
     "grunt-contrib-concat": "1.0.1",
