@@ -26,7 +26,7 @@
     "grunt-contrib-uglify": "4.0.1",
     "grunt-karma": "3.0.1",
     "grunt-ngdocs": "0.2.11",
-    "jasmine-core": "3.3.0",
+    "jasmine-core": "3.4.0",
     "phantomjs": "1.9.20",
     "karma": "4.0.1",
     "karma-coverage": "0.5.3",
