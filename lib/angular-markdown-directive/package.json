@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/btford/angular-markdown-directive",
   "devDependencies": {
-    "karma": "4.0.1",
+    "karma": "4.1.0",
     "karma-jasmine": "2.0.1",
     "karma-firefox-launcher": "1.1.0",
     "karma-chrome-launcher": "0.2.3"
