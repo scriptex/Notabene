@@ -31,12 +31,16 @@
     }
   ],
   "scripts": {
-    "test": "gulp lint && gulp karma --browsers=PhantomJS --reporters=progress"
+    "test": "gulp lint && gulp karma --browsers=PhantomJS --reporters=progress",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "conventional-changelog": "3.1.8",
     "fs": "0.0.2",
     "gulp-git": "^2.0.0",
-    "q": "^1.1.2"
-  }
+    "q": "^1.1.2",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
