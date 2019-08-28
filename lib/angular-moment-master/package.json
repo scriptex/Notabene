@@ -28,7 +28,7 @@
     "grunt-ngdocs": "0.2.11",
     "jasmine-core": "3.4.0",
     "phantomjs": "1.9.20",
-    "karma": "4.2.0",
+    "karma": "4.3.0",
     "karma-coverage": "2.0.1",
     "karma-jasmine": "2.0.1",
     "karma-phantomjs-launcher": "1.0.4",
