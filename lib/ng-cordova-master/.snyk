@@ -10,3 +10,8 @@ patch:
         patched: '2019-07-03T21:42:12.986Z'
     - conventional-changelog > conventional-changelog-core > conventional-commits-parser > lodash:
         patched: '2019-07-03T21:42:12.986Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - snyk > proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T21:45:22.430Z'
+    - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T21:45:22.430Z'
