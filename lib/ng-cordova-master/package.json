@@ -36,7 +36,7 @@
     "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
-    "conventional-changelog": "3.1.14",
+    "conventional-changelog": "3.1.15",
     "fs": "0.0.2",
     "gulp-git": "^2.0.0",
     "q": "^1.1.2",
