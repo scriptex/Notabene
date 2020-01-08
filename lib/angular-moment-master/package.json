@@ -30,7 +30,7 @@
     "phantomjs": "1.9.20",
     "karma": "4.4.1",
     "karma-coverage": "2.0.1",
-    "karma-jasmine": "3.0.1",
+    "karma-jasmine": "3.0.3",
     "karma-phantomjs-launcher": "1.0.4",
     "load-grunt-tasks": "5.1.0"
   },
