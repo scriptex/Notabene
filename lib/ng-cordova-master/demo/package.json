@@ -12,7 +12,7 @@
   "devDependencies": {
     "bower": "1.8.8",
     "gulp-util": "3.0.8",
-    "shelljs": "0.8.3"
+    "shelljs": "0.8.4"
   },
   "cordovaPlugins": [
     "org.apache.cordova.camera",
